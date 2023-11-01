@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fußball Hallenturniere Eintragung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fußball Hallenturnier Eintragung</h1>
+        
+        <form id="turnierForm">
+            <div class="form-group">
+                <label for="date">Turnierdatum:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="spielmodus">Spielmodus:</label>
+                <select id="spielmodus" name="spielmodus">
+                    <option value="bande">Bande</option>
+                    <option value="futsal">Futsal</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="spieleranzahl">Anzahl Spieler:</label>
+                <select id="spieleranzahl" name="spieleranzahl">
+                    <option value="3vs3">3vs3</option>
+                    <option value="4+1">4+1</option>
+                    <option value="5+1">5+1</option>
+                    <option value="6+1">6+1</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="banner">Vereinsbanner hochladen:</label>
+                <input type="file" id="banner" name="banner" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="flyer">Flyer hochladen (optional):</label>
+                <input type="file" id="flyer" name="flyer" accept="application/pdf">
+            </div>
+
+            <button type="submit">Turnier Eintragen</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
